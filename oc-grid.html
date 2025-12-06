@@ -5,7 +5,7 @@ title: Character Gallery | Chloraide
 
 <div class="filters">
   <button class="filter-btn" data-filter="all">All</button>
-  {% assign universes = "Strength Seeker,Progenies,The Long Midnight" | split: "," %}
+  {% assign universes = "Salletverse,Hunterverse,Star Cannon" | split: "," %}
   {% for u in universes %}
   <button class="filter-btn" data-filter="{{ u | escape }}">{{ u }}</button>
   {% endfor %}
@@ -108,9 +108,9 @@ title: Character Gallery | Chloraide
       const universe = wrapper.dataset.universe;
       const frame = wrapper.querySelector('.frame');
       const frames = {
-        "Strength Seeker": "/assets/images/frames/frame_strs.png",
-        "Progenies": "/assets/images/frames/frame_prog.png",
-        "The Long Midnight": "/assets/images/frames/frame_midnight.png",
+        "Salletverse": "/assets/images/frames/frame_strs.png",
+        "Hunterverse": "/assets/images/frames/frame_prog.png",
+        "Star Canon": "/assets/images/frames/frame_midnight.png",
         "Misc": "/assets/images/frames/frame_misc.png"
       };
       frame.src = frames[universe] || "";

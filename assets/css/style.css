@@ -12,9 +12,13 @@
     --color-accent-hover: #136dd4;
     --color-glow: rgba(75, 102, 150, 0.5);
 
-    --color-strs: #28295e;
-    --color-prog: #796323;
-    --color-tlm: #612828;
+    --color-sallet: #28295e;
+    --color-hunter: #796323;
+    --color-starc: #612828;
+
+    --color-sallet: #305b9b;
+    --color-hunter: #7e1818;
+    --color-starc: #b8c72d;
 
     --font-family-base: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji';
 
@@ -463,18 +467,18 @@ h3 {
 
 
 
-.filter-btn[data-filter="Strength Seeker"].active {
-    background: radial-gradient(circle, rgba(18, 18, 19, 0) 0%, var(--color-strs) 100%);
+.filter-btn[data-filter="Salletverse"].active {
+    background: radial-gradient(circle, rgba(18, 18, 19, 0) 0%, var(--color-sallet) 100%);
     color: #fff;
 }
 
-.filter-btn[data-filter="Progenies"].active {
-    background: radial-gradient(circle, rgba(18, 18, 19, 0) 0%, var(--color-prog) 100%);
+.filter-btn[data-filter="Hunterverse"].active {
+    background: radial-gradient(circle, rgba(18, 18, 19, 0) 0%, var(--color-hunter) 100%);
     color: #fff;
 }
 
-.filter-btn[data-filter="The Long Midnight"].active {
-    background: radial-gradient(circle, rgba(18, 18, 19, 0) 0%, var(--color-tlm) 100%);
+.filter-btn[data-filter="Star Cannon"].active {
+    background: radial-gradient(circle, rgba(18, 18, 19, 0) 0%, var(--color-starc) 100%);
     color: #fff;
 }
 
@@ -493,18 +497,18 @@ h3 {
     color: #fff;
 }
 
-.filter-btn[data-filter="Strength Seeker"]:hover {
-    background: var(--color-strs);
+.filter-btn[data-filter="Salletverse"]:hover {
+    background: var(--color-sallet);
     color: #fff;
 }
 
-.filter-btn[data-filter="Progenies"]:hover {
-    background: var(--color-prog);
+.filter-btn[data-filter="Hunterverse"]:hover {
+    background: var(--color-hunter);
     color: #fff;
 }
 
-.filter-btn[data-filter="The Long Midnight"]:hover {
-    background: var(--color-tlm);
+.filter-btn[data-filter="Star Cannon"]:hover {
+    background: var(--color-starc);
     color: #fff;
 }
 
@@ -566,28 +570,28 @@ h3 {
     filter: brightness(1.0);
 }
 
-.oc-card-wrapper[data-universe="Strength Seeker"] .frame {
+.oc-card-wrapper[data-universe="Salletverse"] .frame {
     background-image: url("/assets/images/frames/frame_strs.png");
 }
 
-.oc-card-wrapper[data-universe="Progenies"] .frame {
+.oc-card-wrapper[data-universe="Hunterverse"] .frame {
     background-image: url("/assets/images/frames/frame_prog.png");
 }
 
-.oc-card-wrapper[data-universe="The Long Midnight"] .frame {
+.oc-card-wrapper[data-universe="Star Cannon"] .frame {
     background-image: url("/assets/images/frames/frame_midnight.png");
 }
 
 /* Universe-specific shadow colors */
-.oc-card-wrapper[data-universe="Strength Seeker"] {
+.oc-card-wrapper[data-universe="Salletverse"] {
     --shadow-card: 0 6px 20px rgba(61, 146, 180, 0.5);
 }
 
-.oc-card-wrapper[data-universe="Progenies"] {
+.oc-card-wrapper[data-universe="Hunterverse"] {
     --shadow-card: 0 6px 20px rgba(179, 145, 43, 0.5);
 }
 
-.oc-card-wrapper[data-universe="The Long Midnight"] {
+.oc-card-wrapper[data-universe="Star Cannon"] {
     --shadow-card: 0 6px 20px rgba(155, 38, 38, 0.5);
 }
 
@@ -691,18 +695,18 @@ h3 {
     color: #fafafa;
 }
 
-.oc-card[data-universe="Progenies"] .tag {
-    background-color: var(--color-prog);
+.oc-card[data-universe="Hunterverse"] .tag {
+    background-color: var(--color-hunter);
     color: #fafafa;
 }
 
-.oc-card[data-universe="Strength Seeker"] .tag {
-    background-color: var(--color-strs);
+.oc-card[data-universe="Salletverse"] .tag {
+    background-color: var(--color-sallet);
     color: #fafafa;
 }
 
-.oc-card[data-universe="The Long Midnight"] .tag {
-    background-color: var(--color-tlm);
+.oc-card[data-universe="Star Cannon"] .tag {
+    background-color: var(--color-starc);
     color: #fafafa;
 }
 
